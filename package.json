@@ -1,0 +1,14 @@
+{
+  "name": "timeular-jobs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pedro Semeano",
+  "license": "MIT",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.4",
+    "dotenv": "^8.2.0"
+  }
+}
