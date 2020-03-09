@@ -13,7 +13,7 @@ https.get('https://timeular.com/jobs/', (res) => {
     let match = s.match(/<title>.+<\/title>/)
     if (!!match) {
       let title = s.substring(match.index + 7, match.index + match[0].length - 19)
-      if (title.toLowerCase() == "page not found") {        
+      if (title.toLowerCase() !== "page not found") {        
         const msg = {
           to: TO,
           from: FROM,
